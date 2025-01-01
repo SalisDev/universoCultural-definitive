@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Livros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .book-container {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .book-container:hover {
+            transform: scale(1.05);
+        }
+
+        .book-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .book-price {
+            font-size: 16px;
+            color: green;
+            margin-top: 5px;
+        }
+
+        .book-details-btn {
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .book-details-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .carousel-inner {
+            max-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Carrossel -->
+    <div id="bookCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400?text=Promoção+de+Livros" class="d-block w-100" alt="Promoção">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Novidades+na+Loja" class="d-block w-100" alt="Novidades">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Livros+Populares" class="d-block w-100" alt="Populares">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#bookCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#bookCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Exposição dos Livros -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Livros Disponíveis</h2>
+        <div class="book-list">
+            <!-- Livro 1 -->
+            <div class="book-container">
+                <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+1" alt="Livro 1" class="book-image">
+                <div class="book-title">Título do Livro 1</div>
+                <div class="book-price">R$ 39,90</div>
+                <button class="book-details-btn">Ver Detalhes</button>
+            </div>
+            <!-- Livro 2 -->
+            <div class="book-container">
+                <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+2" alt="Livro 2" class="book-image">
+                <div class="book-title">Título do Livro 2</div>
+                <div class="book-price">R$ 29,90</div>
+                <button class="book-details-btn">Ver Detalhes</button>
+            </div>
+            <!-- Livro 3 -->
+            <div class="book-container">
+                <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+3" alt="Livro 3" class="book-image">
+                <div class="book-title">Título do Livro 3</div>
+                <div class="book-price">R$ 49,90</div>
+                <button class="book-details-btn">Ver Detalhes</button>
+            </div>
+            <!-- Livro 4 -->
+            <div class="book-container">
+                <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+4" alt="Livro 4" class="book-image">
+                <div class="book-title">Título do Livro 4</div>
+                <div class="book-price">R$ 59,90</div>
+                <button class="book-details-btn">Ver Detalhes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

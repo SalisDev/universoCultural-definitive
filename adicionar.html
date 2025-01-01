@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>adicionar livro</title>
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <a href="Index.html" class="logo">Universo Cultural
+
+            
+        </a>
+        <ul class="nav-links">
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="adicionar.html">Cadastro</a></li>
+            <li><a href="Listagem.html">Listagem</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="Cadastro.html">sing-up</a></li>
+            <li><a href="Login.html">log-in</a></li>
+        </ul>
+    </div>
+    <br>
+    </header>
+
+    <main class="cadastromain">
+    <div class="adicionar">
+    <div class="container2">
+        <div class="dropdown">
+            <button class="dropdown-btn">Selecionar Categoria</button>
+            <div class="dropdown-content">
+                <a href="adicionar.html">Livros</a>
+                <a href="adicionar1.html">Autores</a>
+                <a href="adicionar2.html">Gêneros</a>
+                <a href="adicionar3.html">Idiomas</a>
+                <a href="adicionar4.html">Editoras</a>
+            </div>
+        </div>
+
+        <form class="form-cadastro" action="#" method="POST">
+            <h1>Cadastro de Livros</h1>
+            
+            <label for="nome">Nome do livro:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="capa">Capa:</label>
+            <select id="capa" name="capa" required>
+                <option value="dura">Dura</option>
+                <option value="mole">Mole</option>
+            </select>
+
+            <label for="autor">Autor:</label>
+            <select id="autor" name="autor" required>
+                <option value="">Selecione um autor</option>
+                <!-- Opções adicionadas pelo php -->
+            </select>
+
+            <label for="editora">Editora:</label>
+            <select id="editora" name="editora" required>
+                <option value="">Selecione uma editora</option>
+                <!-- Opções adicionadas pelo php -->
+            </select>
+
+            <label for="isbn">ISBN:</label>
+            <input type="number" id="isbn" name="isbn" required>
+
+            <label for="paginas">Quantidade de Páginas:</label>
+            <input type="number" id="paginas" name="paginas" required>
+
+            <label for="subtitulo">Subtítulo:</label>
+            <input type="text" id="subtitulo" name="subtitulo">
+
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" name="idioma" required>
+                <option value="">Selecione um idioma</option>
+                <!-- Opções adicionadas pelo php -->
+            </select>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione um gênero</option>
+                <!-- Opções adicionadas pelo php -->
+            </select>
+
+            <label for="ano">Ano de Lançamento:</label>
+            <input type="date" id="ano" name="ano" required>
+
+            <button type="submit" class="btn-submit">Cadastrar</button>
+        </form>
+    </div>
+</div>
+</main>
+
+</body>
+</html>
