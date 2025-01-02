@@ -7,12 +7,9 @@
     <title>adicionar livro</title>
 </head>
 <body>
-    <header>
+    
     <div class="navbar">
-        <a href="Index.html" class="logo">Universo Cultural
-
-            
-        </a>
+        <a href="Index.html" class="logo"><img class="logo" src="imagens/logo.png" alt="Universo Cultural"></a>
         <ul class="nav-links">
             <li><a href="Index.html">Início</a></li>
             <li><a href="adicionar.html">Cadastro</a></li>
@@ -22,12 +19,11 @@
             <li><a href="Login.html">log-in</a></li>
         </ul>
     </div>
-    <br>
-    </header>
 
-    <main class="cadastromain">
+    <!-- <main class="cadastromain"> -->
     <div class="adicionar">
     <div class="container2">
+        <div class="align">
         <div class="dropdown">
             <button class="dropdown-btn">Selecionar Categoria</button>
             <div class="dropdown-content">
@@ -38,7 +34,8 @@
                 <a href="adicionar4.html">Editoras</a>
             </div>
         </div>
-
+        </div>
+        
         <form class="form-cadastro" action="#" method="POST">
             <h1>Cadastro de Livros</h1>
             
@@ -64,7 +61,16 @@
             </select>
 
             <label for="isbn">ISBN:</label>
-            <input type="number" id="isbn" name="isbn" required>
+            <input type="number" id="ISBN" name="ISBN" min="1000000000000" max="9999999999999" placeholder="0000000000000" title="Digite o ISBN do livro">
+            <script>
+                const numberInput = document.getElementById('ISBN');
+                numberInput.addEventListener('input', function () {
+                    const value = this.value;
+                    if (value.length > 13) {
+                    this.value = value.slice(0, 13); // Limita a 13 dígitos
+                    }
+                });
+            </script>
 
             <label for="paginas">Quantidade de Páginas:</label>
             <input type="number" id="paginas" name="paginas" required>
@@ -81,17 +87,27 @@
             <label for="genero">Gênero:</label>
             <select id="genero" name="genero" required>
                 <option value="">Selecione um gênero</option>
+                <option value="1">aventura</option>
                 <!-- Opções adicionadas pelo php -->
             </select>
 
-            <label for="ano">Ano de Lançamento:</label>
-            <input type="date" id="ano" name="ano" required>
+            <label for="year">Ano de lançamento:</label>
+            <input type="number" id="year" name="year" min="1000" max="9999" placeholder="Ano (ex: 2025)" title="Digite o ano do lançamento do livro">
+            <script>
+                const yearInput = document.getElementById('year');
+                yearInput.addEventListener('input', function () {
+                    const value = this.value;
+                    if (value.length > 4) {
+                    this.value = value.slice(0, 4); // Limita a 4 dígitos
+                    }
+                });
+            </script>
 
             <button type="submit" class="btn-submit">Cadastrar</button>
+
         </form>
     </div>
 </div>
-</main>
-
+<!-- </main> -->
 </body>
 </html>

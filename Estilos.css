@@ -66,9 +66,9 @@
 
 .container2 {
     width: 80%;
-    max-width: 600px;
+    max-width: 1000px;
     background: #fff;
-    padding: 20px;
+    padding: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -225,5 +225,33 @@ input:focus, select:focus {
         }
 
         .carousel-inner {
-            max-height: 500px;
+            max-height: 300px;
+        }
+        /* header {
+            background-color: #1a68a0;
+        }
+
+        align {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        footer {
+            background-color: #023c65;
+        } */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #023c65; 
+            margin-top: 10;
+            padding: 10;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100;
+        }
+
+        .logo {
+            width: 100pt;
         }
