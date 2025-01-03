@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos.css">
-    <title>Listagem</title>
-</head>
-<body>
-    <div class="navbar">
-        <a href="Index.html" class="logo"><img class="logo" src="imagens/logo.png" alt="Universo Cultural"></a>
 
-        
-        <ul class="nav-links">
-            <li><a href="Index.html">Início</a></li>
-            <li><a href="adicionar.html">Cadastro</a></li>
-            <li><a href="Listagem.html">Listagem</a></li>
-            <li><a href="Contato.html">Contato</a></li>
-            <li><a href="Cadastro.html">sing-up</a></li>
-            <li><a href="Login.html">log-in</a></li>
-        </ul>
-    </div>
+   
     <!-- Exposição dos Livros -->
     <div class="container mt-5">
         <div class="exibitonTitle">
@@ -113,5 +93,3 @@
                 <button class="book-details-btn">Ver Detalhes</button>
             </div>
             <!-- livros adicionadas dinamicamente pelo php -->
-</body>
-</html>

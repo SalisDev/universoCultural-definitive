@@ -5,35 +5,12 @@ USE universo_cultural;
 -- Tabela endereco
 CREATE TABLE endereco (
     cod INT PRIMARY KEY AUTO_INCREMENT,
-    uf CHAR(2),
-    cidade VARCHAR(30),
-    bairro VARCHAR(25),
-    rua VARCHAR(30),
-    referencial VARCHAR(40)
-);
-
--- Tabela autor
-CREATE TABLE autor (
-    cod INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(40)
-);
-
--- Tabela editora
-CREATE TABLE editora (
-    cod INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(40)
-);
-
--- Tabela idioma
-CREATE TABLE idioma (
-    cod INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(40)
-);
-
--- Tabela genero
-CREATE TABLE genero (
-    cod INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(40)
+    cidade varchar(30) DEFAULT NULL,
+    bairro varchar(25) DEFAULT NULL,
+    rua varchar(30) DEFAULT NULL,
+    estado varchar(30) NOT NULL,
+    cep int(8) NOT NULL,
+    numero int(4) NOT NULL
 );
 
 -- Tabela estoque
@@ -46,34 +23,30 @@ CREATE TABLE estoque (
 );
 
 -- Tabela cliente
-CREATE TABLE cliente (
+CREATE TABLE usuario (
     cod INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(35),
     email VARCHAR(45),
-    telefone VARCHAR(15),
+    senha VARCHAR(255),
+    fone VARCHAR(15),
     obs VARCHAR(45),
     endereco INT,
-    CPF_CNPJ VARCHAR(18),
+    cpf VARCHAR(18),
     FOREIGN KEY (endereco) REFERENCES endereco(cod)
 );
 
 -- Tabela tbLivro
 CREATE TABLE tbLivro (
     cod INT PRIMARY KEY AUTO_INCREMENT,
-    capa CHAR(15),
-    autor INT,
-    FOREIGN KEY (autor) REFERENCES autor(cod),
-    editora INT,
-    FOREIGN KEY (editora) REFERENCES editora(cod),
+    capa VARCHAR(15),
+    autor VARCHAR(255),
+    editora VARCHAR(255),
     ISBN VARCHAR(13),
     paginas INT,
     subtitulo VARCHAR(50),
-    estoque INT,
-    FOREIGN KEY (estoque) REFERENCES estoque(cod),
-    idioma INT,
-    FOREIGN KEY (idioma) REFERENCES idioma(cod),
-    genero INT,
-    FOREIGN KEY (genero) REFERENCES genero(cod),
+    estoque VARCHAR(255),
+    idioma VARCHAR(255),
+    genero VARCHAR(255),
     anoLancamento DATE
 );
 
@@ -86,13 +59,6 @@ CREATE TABLE tbCompra (
     quantidade INT,
     livro INT,
     FOREIGN KEY (livro) REFERENCES tbLivro(cod),
-    cliente INT,
-    FOREIGN KEY (cliente) REFERENCES cliente(cod)
-);
-
-CREATE TABLE users (
-cod INT PRIMARY KEY auto_increment,
-EMAIL varchar(100),
-senha varchar(100),
-username varchar(50)
+    usuario INT,
+    FOREIGN KEY (usuario) REFERENCES usuario(cod)
 );
