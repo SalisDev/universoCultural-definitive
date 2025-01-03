@@ -170,11 +170,6 @@ input:focus, select:focus {
     background-color: #2b5f2d;
     transition: 0.5s;
 }
-        .carousel-item img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
 
         .book-container {
             border: 1px solid #ddd;
@@ -230,8 +225,20 @@ input:focus, select:focus {
             justify-content: center;
         }
 
+        
+        #bookCarousel {
+            height: 500px;
+        }
+
+        
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
         .carousel-inner {
-            max-height: 300px;
+            max-height: 500px;
         }
         /* header {
             background-color: #1a68a0;

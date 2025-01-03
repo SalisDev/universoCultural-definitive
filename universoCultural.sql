@@ -1,84 +1,91 @@
-create database universo_cultural;
+-- Criação do banco de dados
+CREATE DATABASE universo_cultural;
+USE universo_cultural;
 
-use universo_cultural;
-
-create table endereco(
-cod int primary key,
-uf char (2),
-cidade varchar (30),
-bairro varchar (25),
-rua varchar (30),
-referencial varchar (40)
+-- Tabela endereco
+CREATE TABLE endereco (
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    uf CHAR(2),
+    cidade VARCHAR(30),
+    bairro VARCHAR(25),
+    rua VARCHAR(30),
+    referencial VARCHAR(40)
 );
 
+-- Tabela autor
 CREATE TABLE autor (
-cod int primary key,
-nome varchar(40)
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(40)
 );
 
+-- Tabela editora
 CREATE TABLE editora (
-cod int primary key,
-nome varchar(40)
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(40)
 );
 
+-- Tabela idioma
 CREATE TABLE idioma (
-cod int primary key,
-nome varchar(40)
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(40)
 );
 
+-- Tabela genero
 CREATE TABLE genero (
-cod int primary key,
-nome varchar(40)
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(40)
 );
 
+-- Tabela estoque
 CREATE TABLE estoque (
-cod int primary key,
-quantidade int,
-valorVenda real,
-valorCompra real,
-lote int
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    quantidade INT,
+    valorVenda DECIMAL(10,2),
+    valorCompra DECIMAL(10,2),
+    lote INT
 );
 
+-- Tabela cliente
 CREATE TABLE cliente (
-cod int primary key,
-nome varchar(35),
-email varchar(45),
-telefone int,
-obs varchar(45),
-endereco int,
-CPF_CNPJ int,
-foreign key (endereco) references endereco(cod)
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(35),
+    email VARCHAR(45),
+    telefone VARCHAR(15),
+    obs VARCHAR(45),
+    endereco INT,
+    CPF_CNPJ VARCHAR(18),
+    FOREIGN KEY (endereco) REFERENCES endereco(cod)
 );
 
-create table tbLivro(
-cod int primary key,
-capa char (15),
-autor int,
-foreign key (autor) references autor(cod),
-editora int,
-foreign key (editora) references editora(cod),
-ISBN varchar (13),
-paginas int,
-subtitulo varchar (50),
-estoque int,
-foreign key (estoque) references estoque(cod),
-idioma int,
-foreign key (idioma) references idioma(cod),
-genero int,
-foreign key (genero) references genero(cod),
-anoLancamento date
+-- Tabela tbLivro
+CREATE TABLE tbLivro (
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    capa CHAR(15),
+    autor INT,
+    FOREIGN KEY (autor) REFERENCES autor(cod),
+    editora INT,
+    FOREIGN KEY (editora) REFERENCES editora(cod),
+    ISBN VARCHAR(13),
+    paginas INT,
+    subtitulo VARCHAR(50),
+    estoque INT,
+    FOREIGN KEY (estoque) REFERENCES estoque(cod),
+    idioma INT,
+    FOREIGN KEY (idioma) REFERENCES idioma(cod),
+    genero INT,
+    FOREIGN KEY (genero) REFERENCES genero(cod),
+    anoLancamento DATE
 );
 
-create table tbCompra(
-cod int primary key,
-entrega varchar (500),
-foreign key (entrega) references entrega(cod),
-hora time,
-dataCompra date,
-quantidade int,
-livro int,
-foreign key (livro) references tbLivro(cod),
-cliente int,
-foreign key (cliente) references cliente(cod)
-
+-- Tabela tbCompra
+CREATE TABLE tbCompra (
+    cod INT PRIMARY KEY AUTO_INCREMENT,
+    entrega VARCHAR(500),
+    hora TIME,
+    dataCompra DATE,
+    quantidade INT,
+    livro INT,
+    FOREIGN KEY (livro) REFERENCES tbLivro(cod),
+    cliente INT,
+    FOREIGN KEY (cliente) REFERENCES cliente(cod)
 );

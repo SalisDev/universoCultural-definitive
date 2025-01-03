@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos.css">
-    <title>adicionar autor</title>
+    <title>Adicionar Autor</title>
 </head>
 <body>
     <div class="navbar">
@@ -15,33 +15,33 @@
             <li><a href="adicionar.html">Cadastro</a></li>
             <li><a href="Listagem.html">Listagem</a></li>
             <li><a href="Contato.html">Contato</a></li>
-            <li><a href="Cadastro.html">sing-up</a></li>
-            <li><a href="Login.html">log-in</a></li>
+            <li><a href="Cadastro.html">Sing-Up</a></li>
+            <li><a href="Login.html">Log-In</a></li>
         </ul>
     </div>
     <br>
 
-<div class="adicionar">
-    <div class="container2">
-        <div class="dropdown">
-            <button class="dropdown-btn">Selecionar Categoria</button>
-            <div class="dropdown-content">
-                <a href="adicionar.html">Livros</a>
-                <a href="adicionar1.html">Autores</a>
-                <a href="adicionar2.html">Gêneros</a>
-                <a href="adicionar3.html">Idiomas</a>
-                <a href="adicionar4.html">Editoras</a>
+    <div class="adicionar">
+        <div class="container2">
+            <div class="dropdown">
+                <button class="dropdown-btn">Selecionar Categoria</button>
+                <div class="dropdown-content">
+                    <a href="adicionar.html">Livros</a>
+                    <a href="adicionar1.html">Autores</a>
+                    <a href="adicionar2.html">Gêneros</a>
+                    <a href="adicionar3.html">Idiomas</a>
+                    <a href="adicionar4.html">Editoras</a>
+                </div>
             </div>
-        </div>
 
-        <form class="form-cadastro" action="#" method="POST">
-            <h1>Cadastro de Autores</h1>
-            
-            <label for="autor">Nome do autor:</label>
-            <input type="text" id="autor" name="autor" required>
-            <button type="submit" class="btn-submit">Cadastrar</button>
- </form>
+            <form class="form-cadastro" action="adicionar_autor.php" method="POST">
+                <h1>Cadastro de Autores</h1>
+                
+                <label for="autor">Nome do autor:</label>
+                <input type="text" id="autor" name="autor" required>
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </form>
+        </div>
     </div>
-</div>
 </body>
 </html>
