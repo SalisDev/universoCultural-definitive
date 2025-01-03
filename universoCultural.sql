@@ -89,3 +89,10 @@ CREATE TABLE tbCompra (
     cliente INT,
     FOREIGN KEY (cliente) REFERENCES cliente(cod)
 );
+
+CREATE TABLE users (
+cod INT PRIMARY KEY auto_increment,
+EMAIL varchar(100),
+senha varchar(100),
+username varchar(50)
+);
