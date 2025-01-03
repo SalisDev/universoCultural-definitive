@@ -1,0 +1,25 @@
+[03-Jan-2025 17:42:59 America/Sao_Paulo] PHP Warning:  require_once(Livro.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\universo-cultural\pages\index.php on line 42
+[03-Jan-2025 17:42:59 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required 'Livro.php' (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\universo-cultural\pages\index.php:42
+Stack trace:
+#0 D:\xampp\htdocs\universo-cultural\index.php(15): include()
+#1 {main}
+  thrown in D:\xampp\htdocs\universo-cultural\pages\index.php on line 42
+[03-Jan-2025 17:58:22 America/Sao_Paulo] PHP Warning:  Undefined array key "imagem" in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 16
+[03-Jan-2025 17:58:22 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 18
+[03-Jan-2025 17:58:22 America/Sao_Paulo] PHP Warning:  Undefined variable $capa in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 24
+[03-Jan-2025 17:58:22 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 24
+[03-Jan-2025 17:59:33 America/Sao_Paulo] PHP Warning:  Undefined array key "imagem" in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 16
+[03-Jan-2025 17:59:33 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 18
+[03-Jan-2025 17:59:33 America/Sao_Paulo] PHP Warning:  Undefined variable $capa in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 24
+[03-Jan-2025 17:59:33 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 24
+[03-Jan-2025 18:03:10 America/Sao_Paulo] PHP Warning:  Undefined array key "imagem" in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 16
+[03-Jan-2025 18:03:10 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 18
+[03-Jan-2025 18:03:10 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 25
+[03-Jan-2025 18:04:16 America/Sao_Paulo] PHP Warning:  Undefined array key "imagem" in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 16
+[03-Jan-2025 18:04:16 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 18
+[03-Jan-2025 18:04:16 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 25
+[03-Jan-2025 18:04:29 America/Sao_Paulo] PHP Warning:  Undefined array key "imagem" in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 16
+[03-Jan-2025 18:04:29 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 18
+[03-Jan-2025 18:04:29 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 25
+[03-Jan-2025 18:08:34 America/Sao_Paulo] Erro ao cadastrar livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[03-Jan-2025 18:14:13 America/Sao_Paulo] PHP Warning:  Undefined array key "capa" in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 14
