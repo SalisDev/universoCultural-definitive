@@ -1,2 +1,2 @@
 # universsoCultural
-aqui é onde vi ter a versão final, depois de ter os ultimos ajustes
+aqui é onde vai ter a versão final do sistema, após seus últimos ajustes
