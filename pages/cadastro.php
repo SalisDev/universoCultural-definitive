@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Cadastro de Usuários</title>
-    <link rel="stylesheet" href="userlog.css">
+    <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>/public/styles/userlog.css">
 </head>
 
 <body>
@@ -33,36 +33,37 @@
                 <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
             </div>
             <div class="endereco">
-                <label for="estado">Selecione seu Estado:</label>
-                <select id="estado" name="estado">
-                    <option value="">Selecione o Estado</option>
-                </select>
-
-                <label for="cidade">Selecione sua Cidade:</label>
-                <select id="cidade" name="cidade" disabled>
-                    <option value="">Selecione o Estado primeiro</option>
-                </select>
-
-                <div class="flex">
-                    <div class="w-50">
-                        <label for="bairro">Escreva seu Bairro:</label>
-                        <input id="bairro" name="bairro" type="text" placeholder="Bairro">
-                    </div>
-
-                    <div class="w-50">
-                        <label for="rua">Escreva sua Rua:</label>
-                        <input id="rua" name="rua" type="text" placeholder="Rua">
-                    </div>
+                <div class="form-group">
+                    <label for="estado">Selecione seu Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="">Selecione o Estado</option>
+                    </select>
                 </div>
-                <div class="flex">
-                    <div class="w-50">
-                        <label for="numero">Escreva seu Numero de residencia:</label>
-                        <input id="numero" name="numero" type="number" placeholder="Numero">
-                    </div>
-                    <div class="w-50">
-                        <label for="cep">Escreva seu CEP:</label>
-                        <input id="cep" name="cep" type="cep" placeholder="Cep">
-                    </div>
+
+                <div class="form-group">
+                    <label for="cidade">Selecione sua Cidade:</label>
+                    <select id="cidade" name="cidade" disabled>
+                        <option value="">Selecione o Estado primeiro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bairro">Escreva seu Bairro:</label>
+                    <input id="bairro" name="bairro" type="text" placeholder="Bairro">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="rua">Escreva sua Rua:</label>
+                    <input id="rua" name="rua" type="text" placeholder="Rua">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Escreva seu Numero de residencia:</label>
+                    <input id="numero" name="numero" type="number" placeholder="Numero">
+                </div>
+                <div class="form-group">
+                    <label for="cep">Escreva seu CEP:</label>
+                    <input id="cep" name="cep" type="cep" placeholder="Cep">
                 </div>
             </div>
             <button type="submit" class="btn">Cadastrar</button>
