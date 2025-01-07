@@ -310,3 +310,7 @@ Stack trace:
 [07-Jan-2025 16:10:33 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
 [07-Jan-2025 16:10:33 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
 [07-Jan-2025 16:10:33 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:26:31 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:26:31 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:26:31 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:26:31 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166

@@ -1,5 +1,4 @@
 <?php
-
 class Usuario {
     public static function excluirUsuario($idUsuario) {
         try {

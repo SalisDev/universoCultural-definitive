@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	// session_destroy();
+
 	date_default_timezone_set('America/Sao_Paulo');
 
 	ini_set('display_errors', 1);
@@ -20,4 +21,4 @@
 	define('USER', 'root');
 	define('PASSWORD', '');
 	define('DATABASE', 'universo_cultural');
-?>
+

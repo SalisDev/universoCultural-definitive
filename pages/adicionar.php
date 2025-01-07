@@ -16,26 +16,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Upload da imagem
     $imagem = $_FILES['imagem'];
     $uploadDir = 'uploads/capas/';
-    $uploadFilePath = $uploadDir . basename($imagem['name']);
+    $nomeArquivo = uniqid('capa_', true) . '.' . pathinfo($imagem['name'], PATHINFO_EXTENSION);
+    $uploadFilePath = $uploadDir . $nomeArquivo;
 
     if (!file_exists($uploadDir)) {
         mkdir($uploadDir, 0777, true);
     }
 
-    // Verifica se o upload foi bem-sucedido
-    if (move_uploaded_file($imagem['tmp_name'], $uploadFilePath)) {
-        $resultado = Livro::cadastrarLivro($tipo_capa, $uploadFilePath, $autor, $editora, $ISBN, $paginas, $subtitulo, 0, $idioma, $genero, $anoLancamento);
+    // Verifica se o arquivo foi enviado corretamente
+    if ($imagem['error'] === UPLOAD_ERR_OK) {
+        if (move_uploaded_file($imagem['tmp_name'], $uploadFilePath)) {
+            // Chama o método para cadastrar o livro
+            $resultado = Livro::cadastrarLivro($tipo_capa, $uploadFilePath, $autor, $editora, $ISBN, $paginas, $subtitulo, 0, $idioma, $genero, $anoLancamento);
 
-        if ($resultado) {
-            echo "Livro cadastrado com sucesso!";
+            if ($resultado) {
+                echo "Livro cadastrado com sucesso!";
+            } else {
+                echo "Erro ao cadastrar o livro.";
+            }
         } else {
-            echo "Erro ao cadastrar o livro.";
+            echo "Erro ao mover o arquivo para o diretório de upload.";
         }
     } else {
-        echo "Erro ao fazer upload da capa.";
+        echo "Erro no upload da imagem: " . $imagem['error'];
     }
 }
 ?>
+
 <!-- <main class="cadastromain"> -->
 <div class="adicionar">
     <div class="container2">
