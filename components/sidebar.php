@@ -28,6 +28,11 @@ $url = isset($_GET['url']) ? $_GET['url'] : 'home';
                 <li><a href="<?php echo INCLUDE_PATH; ?>adicionar">Cadastro</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>listagem">Listagem</a></li>
                 <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                <!-- Ícone de Favoritos -->
+                <li><a href="<?php echo INCLUDE_PATH; ?>favoritos"><i class="fas fa-heart"></i> Favoritos</a></li>
+                <!-- Ícone de Carrinho -->
+                <li><a href="<?php echo INCLUDE_PATH; ?>carrinho"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
             </ul>
+
         </div>
     </header>

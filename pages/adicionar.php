@@ -39,9 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- <main class="cadastromain"> -->
 <div class="adicionar">
     <div class="container2">
-
-
-
         <form action="#" method="POST" class="form-cadastro" enctype="multipart/form-data">
             <h1>Cadastro de Livros</h1>
 

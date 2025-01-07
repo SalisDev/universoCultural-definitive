@@ -23,3 +23,290 @@ Stack trace:
 [03-Jan-2025 18:04:29 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 25
 [03-Jan-2025 18:08:34 America/Sao_Paulo] Erro ao cadastrar livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
 [03-Jan-2025 18:14:13 America/Sao_Paulo] PHP Warning:  Undefined array key "capa" in D:\xampp\htdocs\universo-cultural\pages\adicionar.php on line 14
+[06-Jan-2025 11:02:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\universo-cultural\classes\Livro.php:74
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\index.php(42): Livro::listarLivros()
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 74
+[06-Jan-2025 11:09:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\universo-cultural\classes\Livro.php:74
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\index.php(42): Livro::listarLivros()
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 74
+[06-Jan-2025 11:10:06 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\universo-cultural\classes\Livro.php:74
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\index.php(42): Livro::listarLivros()
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 74
+[06-Jan-2025 11:10:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\universo-cultural\classes\Livro.php:74
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\index.php(42): Livro::listarLivros()
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 74
+[06-Jan-2025 11:11:41 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '12234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:17:48 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in C:\xampp\htdocs\universo-cultural\classes\Livro.php:74
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\index.php(42): Livro::listarLivros()
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 74
+[06-Jan-2025 11:19:12 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:87
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\classes\Usuario.php(125): Usuario::userExists('alissongselau@g...')
+#1 C:\xampp\htdocs\universo-cultural\pages\cadastro.php(89): Usuario::cadastrarUsuario('Alisson', 'alissongselau@g...', '12345678', '42', '', '342', '889955000', '151.613.389-70', '(48) 92002-7951', 'rua 6', 'centro')
+#2 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 87
+[06-Jan-2025 11:19:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '12345678')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:20:26 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:20:46 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:20:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:03 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:04 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:25 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:21:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:22:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:23:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 11:23:53 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 12:41:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\universo-cultural\classes\Usuario.php:99
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\pages\login.php(32): Usuario::login('conradtsamuel@g...', '1234567')
+#1 C:\xampp\htdocs\universo-cultural\index.php(15): include('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\classes\Usuario.php on line 99
+[06-Jan-2025 19:38:04 America/Sao_Paulo] PHP Warning:  Undefined array key "csrf_token" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 16
+[06-Jan-2025 19:38:04 America/Sao_Paulo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 83
+[06-Jan-2025 19:38:39 America/Sao_Paulo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 83
+[06-Jan-2025 19:39:17 America/Sao_Paulo] PHP Warning:  Undefined array key "cidade" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 91
+[06-Jan-2025 19:39:17 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:17 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:20 America/Sao_Paulo] PHP Warning:  Undefined array key "cidade" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 91
+[06-Jan-2025 19:39:20 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:20 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:26 America/Sao_Paulo] PHP Warning:  Undefined array key "cidade" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 91
+[06-Jan-2025 19:39:26 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:26 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:30 America/Sao_Paulo] PHP Warning:  Undefined array key "cidade" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 91
+[06-Jan-2025 19:39:30 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:30 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:51 America/Sao_Paulo] PHP Warning:  Undefined array key "cidade" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 91
+[06-Jan-2025 19:39:51 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:51 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:51 America/Sao_Paulo] PHP Warning:  Undefined array key "cidade" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 91
+[06-Jan-2025 19:39:51 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:51 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:52 America/Sao_Paulo] PHP Warning:  Undefined array key "cidade" in C:\xampp\htdocs\universo-cultural\pages\cadastro.php on line 91
+[06-Jan-2025 19:39:52 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:39:52 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:40:40 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[06-Jan-2025 19:40:40 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[07-Jan-2025 08:37:02 America/Sao_Paulo] Erro ao verificar existência do usuário: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[07-Jan-2025 08:37:02 America/Sao_Paulo] Erro ao verificar existência do CPF: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+[07-Jan-2025 08:51:17 America/Sao_Paulo] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:51:17 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:51:18 America/Sao_Paulo] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:51:18 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:51:18 America/Sao_Paulo] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:51:18 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:28 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:28 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:29 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:32 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:52:32 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:52 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:52 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:54 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:56:54 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:57:07 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:57:08 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:58:41 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 08:58:41 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:07:00 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 17
+[07-Jan-2025 09:07:00 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 17
+[07-Jan-2025 09:07:00 America/Sao_Paulo] PHP Warning:  Undefined array key "preco" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 19
+[07-Jan-2025 09:07:00 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 19
+[07-Jan-2025 09:07:01 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 17
+[07-Jan-2025 09:07:01 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 17
+[07-Jan-2025 09:07:01 America/Sao_Paulo] PHP Warning:  Undefined array key "preco" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 19
+[07-Jan-2025 09:07:01 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 19
+[07-Jan-2025 09:07:20 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:07:20 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:08:52 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:08:52 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:08:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:08:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:08:53 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:08:53 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:26:20 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:26:20 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:26:21 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:26:21 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:26:21 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:26:21 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:26:21 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:26:21 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 380
+[07-Jan-2025 09:27:07 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 207
+[07-Jan-2025 09:27:07 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 207
+[07-Jan-2025 09:28:02 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:02 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:03 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 182
+[07-Jan-2025 09:28:35 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 184
+[07-Jan-2025 09:28:35 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 184
+[07-Jan-2025 09:29:13 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:29:13 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:29:13 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:29:13 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:29:54 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:29:54 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:30:04 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:30:04 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 166
+[07-Jan-2025 09:30:41 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:30:41 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:32:52 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:32:52 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:32:54 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:32:54 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:33:02 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 09:33:02 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 09:33:08 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 09:33:08 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 16:02:56 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 16:02:56 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\index.php on line 51
+[07-Jan-2025 16:07:45 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:07:45 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:08:08 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:08:08 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:10:33 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:10:33 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:10:33 America/Sao_Paulo] PHP Warning:  Undefined array key "nome" in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166
+[07-Jan-2025 16:10:33 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\teste.php on line 166

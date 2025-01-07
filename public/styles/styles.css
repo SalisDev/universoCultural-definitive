@@ -39,7 +39,7 @@
 
 .container {
   padding: 20px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@
 
 .adicionar {
   font-family: Arial, sans-serif;
-  background-color: #023c65; /* Azul claro para o fundo */
+  background-color:   #ffffff; /* Azul claro para o fundo */
   margin-top: 10;
   padding: 10;
   /* display: flex; */
@@ -67,7 +67,7 @@
 .container2 {
   width: 80%;
   max-width: 500px;
-  background: #fff;
+  background: #ffffff;
   padding: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -239,29 +239,13 @@ select:focus {
 .carousel-inner {
   max-height: 500px;
 }
-/* header {
-            background-color: #1a68a0;
-        }
-
-        align {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        footer {
-            background-color: #023c65;
-        } */
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #023c65;
-  margin-top: 10;
-  padding: 10;
+  background-color: #ffffff;
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  height: 100;
 }
 
 .logo {

@@ -12,62 +12,72 @@
     <div class="container">
         <h1>Cadastro de Usuário</h1>
         <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-            </div>
-            <div class="form-group">
-                <label for="cpf">Cpf</label>
-                <input type="cpf" id="cpf" name="cpf" placeholder="Digite seu cpf" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
-            </div>
-            <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-            </div>
-            <div class="endereco">
-                <div class="form-group">
-                    <label for="estado">Selecione seu Estado:</label>
-                    <select id="estado" name="estado">
-                        <option value="">Selecione o Estado</option>
-                    </select>
-                </div>
+                <div class="form-group" id="nameform">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                                    
+        <div class="flex">
+            <div class="side">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">Cpf</label>
+                        <input type="cpf" id="cpf" name="cpf" placeholder="Digite seu cpf" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="cidade">Selecione sua Cidade:</label>
-                    <select id="cidade" name="cidade" disabled>
-                        <option value="">Selecione o Estado primeiro</option>
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="form-group">
+                            <label for="numero">Numero de residencia:</label>
+                            <input id="numero" name="numero" type="number" placeholder="Numero">
+                        </div>
+                       
+            </div>    
+                
+                <!-- aqui vai começar o segundo lado -->
+                <div class="side">
+                        <div class="form-group">
+                            <label for="estado">Selecione seu Estado:</label>
+                            <select id="estado" name="estado">
+                                <option value="">Selecione o Estado</option>
+                            </select>
+                        </div>
 
-                <div class="form-group">
-                    <label for="bairro">Escreva seu Bairro:</label>
-                    <input id="bairro" name="bairro" type="text" placeholder="Bairro">
-                </div>
+                        <div class="form-group">
+                            <label for="cidade">Selecione sua Cidade:</label>
+                            <select id="cidade" name="cidade" disabled>
+                                <option value="">Selecione o Estado primeiro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bairro">Escreva seu Bairro:</label>
+                            <input id="bairro" name="bairro" type="text" placeholder="Bairro">
+                        </div>
 
 
-                <div class="form-group">
-                    <label for="rua">Escreva sua Rua:</label>
-                    <input id="rua" name="rua" type="text" placeholder="Rua">
-                </div>
-                <div class="form-group">
-                    <label for="numero">Escreva seu Numero de residencia:</label>
-                    <input id="numero" name="numero" type="number" placeholder="Numero">
-                </div>
-                <div class="form-group">
-                    <label for="cep">Escreva seu CEP:</label>
-                    <input id="cep" name="cep" type="cep" placeholder="Cep">
-                </div>
-            </div>
-            <button type="submit" class="btn">Cadastrar</button>
-        </form>
+                        <div class="form-group">
+                            <label for="rua">Escreva sua Rua:</label>
+                            <input id="rua" name="rua" type="text" placeholder="Rua">
+                        </div>
+                         <div class="form-group">
+                            <label for="cep">Escreva seu CEP:</label>
+                            <input id="cep" name="cep" type="cep" placeholder="Cep">
+                        </div>
+                    
+                    </div>
+        </div>
+        <button type="submit" class="btn">Cadastrar</button>
+            </form>
 
         <div class="footer">
             Já tem uma conta? <a href="login">Faça login</a>

@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	// session_destroy();
 	date_default_timezone_set('America/Sao_Paulo');
 
 	ini_set('display_errors', 1);
@@ -15,7 +16,7 @@
 	spl_autoload_register($autoload);
 
 	define('INCLUDE_PATH', 'http://localhost/universo-cultural/');
-	define('HOST', 'localhost');
+	define('HOST', 'localhost:3307');
 	define('USER', 'root');
 	define('PASSWORD', '');
 	define('DATABASE', 'universo_cultural');

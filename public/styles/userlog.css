@@ -12,8 +12,8 @@ Body {
 .container {
     background-color: #ffffff;
     width: 100%;
-    max-width: 400px;
-    padding: 20px;
+    width: 500px;
+    padding: 50px;
     border: 1px solid #023c65; /* Azul forte para a borda */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ Body {
 
 .form-group {
     margin-bottom: 15px;
-    max-width: 300px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -39,11 +39,15 @@ Body {
 }
 
 .form-group input, select {
-    width: 100%;
+    width: 88%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #023c65;
     border-radius: 5px;
+}
+
+.form-group select {
+    width: 100%;
 }
 
 .form-group input:focus {
@@ -92,4 +96,20 @@ Body {
 
 .flex {
     display: flex;
+}
+
+.side {
+    width: 50%;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ 
+#nameform {
+    width: 410px;
+    padding-right: 20px;
+}
+
+#nameform input {
+    width: 100%;
 }
