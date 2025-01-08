@@ -11,6 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $idioma = $_POST['idioma'];
     $genero = $_POST['genero'];
     $anoLancamento = $_POST['year'];
+    $estoque = $_POST['estoque'];
+    $preco = $_POST['preco'];
     $tipo_capa = $_POST['tipo_capa'];
 
     // Upload da imagem
@@ -27,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($imagem['error'] === UPLOAD_ERR_OK) {
         if (move_uploaded_file($imagem['tmp_name'], $uploadFilePath)) {
             // Chama o método para cadastrar o livro
-            $resultado = Livro::cadastrarLivro($tipo_capa, $uploadFilePath, $autor, $editora, $ISBN, $paginas, $subtitulo, 0, $idioma, $genero, $anoLancamento);
+            $resultado = Livro::cadastrarLivro($nome, $estoque,$preco,$tipo_capa, $uploadFilePath, $autor, $editora, $ISBN, $paginas, $subtitulo, $idioma, $genero, $anoLancamento);
 
             if ($resultado) {
                 echo "Livro cadastrado com sucesso!";
@@ -92,6 +94,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <label for="subtitulo">Subtítulo:</label>
             <input type="text" id="subtitulo" name="subtitulo">
+
+            <label for="estoque">Estoque:</label>
+            <input type="number" id=" estoque" name="estoque">
+
+            <label for="preco">Valor do produto:</label>
+            <input type="number" id="preco" name="preco" step=".01">
 
             <label for="idioma">Idioma:</label>
             <select id="idioma" name="idioma" required>

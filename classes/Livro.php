@@ -1,36 +1,16 @@
 <?php
 class Livro
 {
-    public static function cadastrarLivro($capa, $imagem, $autor, $editora, $ISBN, $paginas, $subtitulo, $estoque, $idioma, $genero, $anoLancamento)
+    public static function cadastrarLivro($nome,$estoque, $preco, $tipo_capa, $imagem, $autor, $editora, $ISBN, $paginas, $subtitulo, $idioma, $genero, $anoLancamento)
     {
         try {
-            if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] == 0) {
-                $extensao = pathinfo($_FILES['imagem']['name'], PATHINFO_EXTENSION);
-                $nomeImagem = 'app1.' . $extensao; // Nome fixo da imagem
-                $diretorio = 'uploads/capas/';
-
-                // Cria o diretório se não existir
-                if (!is_dir($diretorio)) {
-                    mkdir($diretorio, 0777, true);
-                }
-
-                // Move o arquivo para o diretório de uploads
-                move_uploaded_file($_FILES['imagem']['tmp_name'], $diretorio . $nomeImagem);
-
-                // Atribui o caminho do arquivo à variável $capa
-                $imagem = $diretorio . $nomeImagem; // Aqui você passa o caminho do arquivo como imagem
-            } else {
-                $imagem = 'uploads/capas/default.jpg'; // Caminho default, se não houver imagem
-            }
-
-
             // Conecta ao banco de dados
             $pdo = MySql::conectar();
-            $sql = $pdo->prepare("INSERT INTO tbLivro (capa, imagem, autor, editora, ISBN, paginas, subtitulo, estoque, idioma, genero, anoLancamento) 
-                                  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $sql = $pdo->prepare("INSERT INTO tbLivro (nome, capa, imagem, autor, editora, ISBN, paginas, subtitulo, estoque, preco, idioma, genero, anoLancamento) 
+                              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
             // Agora incluindo todos os parâmetros corretamente
-            $sql->execute([$capa, $imagem, $autor, $editora, $ISBN, $paginas, $subtitulo, $estoque, $idioma, $genero, $anoLancamento]);
+            $sql->execute([$nome, $tipo_capa, $imagem, $autor, $editora, $ISBN, $paginas, $subtitulo, $estoque, $preco, $idioma, $genero, $anoLancamento]);
 
             return $pdo->lastInsertId();
         } catch (PDOException $e) {
@@ -38,6 +18,7 @@ class Livro
             return false;
         }
     }
+
 
 
     public static function atualizarLivro($id, $capa, $autor, $editora, $ISBN, $paginas, $subtitulo, $estoque, $idioma, $genero, $anoLancamento)

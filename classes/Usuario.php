@@ -105,6 +105,8 @@ class Usuario {
                 $_SESSION['tipo'] = 'user';
                 $_SESSION['senha'] = $usuario['senha'];
                 $_SESSION['email'] = $usuario['email'];
+                $_SESSION['cod'] = $usuario['cod'];
+                $_SESSION['usuario'] = $usuario;
                 return true;
             }
             

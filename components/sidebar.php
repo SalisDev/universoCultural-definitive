@@ -15,6 +15,8 @@ $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     <title>Universo Cultural</title>
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>/public/styles/styles.css">
     <script src="https://kit.fontawesome.com/d9dda7c4a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link para funcionalidades do Bootstrap -->
 </head>
 
 <body>
