@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $editora = $_POST['editora'];
     $ISBN = $_POST['ISBN'];
     $paginas = $_POST['paginas'];
-    $subtitulo = $_POST['subtitulo'];
+    $resumo = $_POST['resumo'];
     $idioma = $_POST['idioma'];
     $genero = $_POST['genero'];
     $anoLancamento = $_POST['year'];
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($imagem['error'] === UPLOAD_ERR_OK) {
         if (move_uploaded_file($imagem['tmp_name'], $uploadFilePath)) {
             // Chama o método para cadastrar o livro
-            $resultado = Livro::cadastrarLivro($nome, $estoque, $preco, $tipo_capa, $uploadFilePath, $autor, $editora, $ISBN, $paginas, $subtitulo, $idioma, $genero, $anoLancamento);
+            $resultado = Livro::cadastrarLivro($nome, $estoque, $preco, $tipo_capa, $uploadFilePath, $autor, $editora, $ISBN, $paginas, $resumo, $idioma, $genero, $anoLancamento);
 
             if ($resultado) {
                 echo "<script>alert('Livro cadastrado com sucesso!')</script>";
@@ -93,8 +93,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="paginas">Quantidade de Páginas:</label>
     <input type="number" id="paginas" name="paginas" required>
 
-    <label for="subtitulo">Subtítulo:</label>
-    <input type="text" id="subtitulo" name="subtitulo">
+    <label for="resumo">Resumo:</label>
+    <input type="text" id="resumo" name="resumo">
 
     <label for="estoque">Estoque:</label>
     <input type="number" id=" estoque" name="estoque">

@@ -88,7 +88,7 @@ CREATE TABLE `tblivro` (
   `editora` varchar(255) DEFAULT NULL,
   `ISBN` varchar(13) DEFAULT NULL,
   `paginas` int(11) DEFAULT NULL,
-  `subtitulo` varchar(50) DEFAULT NULL,
+  `resumo` varchar(150) DEFAULT NULL,
   `estoque` varchar(255) DEFAULT NULL,
   `idioma` varchar(255) DEFAULT NULL,
   `genero` varchar(255) DEFAULT NULL,

@@ -362,11 +362,22 @@ body {
   width: 100%; /* Faz com que os botões ocupem a largura total disponível */
 }
 
+.book-list #buy-btn {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px; /* Espaço entre os botões */
+  width:45%; /* Faz com que os botões ocupem 80% da largura total disponível */
+}
+
 .remove-cart-btn, .remove-fav-btn {
   background-color: #dc3545;
 }
 
-.remove-cart-btn, .remove-fav-btn :hover {
+.remove-cart-btn:hover, .remove-fav-btn:hover {
   background-color: #a71d2a;
   transform: scale(1.05); /* Pequena animação ao passar o mouse */
 }
@@ -379,11 +390,11 @@ body {
   transform: scale(1.05); /* Pequena animação ao passar o mouse */
 }
 
-.buy-btn {
+.buy-btn, #buy-btn {
   background-color: #28a745;
 }
 
-.buy-btn:hover {
+.buy-btn:hover, #buy-btn:hover {
   background-color: #218838;
   transform: scale(1.05); /* Pequena animação ao passar o mouse */
 }

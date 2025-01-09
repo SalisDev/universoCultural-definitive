@@ -28,7 +28,8 @@
         <div class="exibitonTitle">
             <h2 class="text-center mb-4">Livros Disponíveis</h2>
         </div>
-        <div class="book-list">
+        
+    <div class="book-list">
             <?php
             $livros = Livro::listarLivros();
             
@@ -47,7 +48,7 @@
                                 <i class="fas fa-shopping-cart"></i> <!-- Ícone de Carrinho -->
                             </button>
                         </div>
-                        <button class="buy-btn">Comprar</button> <!-- Botão de Comprar -->
+                        <button Id="buy-btn">Comprar</button> <!-- Botão de Comprar -->
                         <button class="detal-btn">Detalhes</button> <!-- Botão de Comprar -->
                     </div>';
                 }

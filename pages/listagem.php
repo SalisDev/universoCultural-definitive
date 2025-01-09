@@ -6,90 +6,32 @@
     </div>
 
     <div class="book-list">
-        <!-- Livro 1 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+1" alt="Livro 1" class="book-image">
-            <div class="book-title">Título do Livro 1</div>
-            <div class="book-price">R$ 39,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 2 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+2" alt="Livro 2" class="book-image">
-            <div class="book-title">Título do Livro 2</div>
-            <div class="book-price">R$ 29,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 3 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+3" alt="Livro 3" class="book-image">
-            <div class="book-title">Título do Livro 3</div>
-            <div class="book-price">R$ 49,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 4 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+4" alt="Livro 4" class="book-image">
-            <div class="book-title">Título do Livro 4</div>
-            <div class="book-price">R$ 59,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 1 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+1" alt="Livro 1" class="book-image">
-            <div class="book-title">Título do Livro 5</div>
-            <div class="book-price">R$ 39,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 2 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+2" alt="Livro 2" class="book-image">
-            <div class="book-title">Título do Livro 6</div>
-            <div class="book-price">R$ 29,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 3 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+3" alt="Livro 3" class="book-image">
-            <div class="book-title">Título do Livro 7</div>
-            <div class="book-price">R$ 49,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 4 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+4" alt="Livro 4" class="book-image">
-            <div class="book-title">Título do Livro 8</div>
-            <div class="book-price">R$ 59,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 1 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+1" alt="Livro 1" class="book-image">
-            <div class="book-title">Título do Livro 9</div>
-            <div class="book-price">R$ 39,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 2 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+2" alt="Livro 2" class="book-image">
-            <div class="book-title">Título do Livro 10</div>
-            <div class="book-price">R$ 29,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 3 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+3" alt="Livro 3" class="book-image">
-            <div class="book-title">Título do Livro 11</div>
-            <div class="book-price">R$ 49,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-        <!-- Livro 4 -->
-        <div class="book-container">
-            <img src="https://via.placeholder.com/150x250?text=Capa+do+Livro+4" alt="Livro 4" class="book-image">
-            <div class="book-title">Título do Livro 12</div>
-            <div class="book-price">R$ 59,90</div>
-            <button class="book-details-btn">Ver Detalhes</button>
-        </div>
-    </div>
+            <?php
+            $livros = Livro::listarLivros();
+            
+            if ($livros && count($livros) > 0) {
+                foreach ($livros as $livro) {
+                    echo '
+                    <div class="book-container">
+                        <img src="' . htmlspecialchars($livro['imagem']) . '" alt="' . htmlspecialchars($livro['subtitulo']) . '" class="book-image">
+                        <div class="book-title">' . htmlspecialchars($livro['nome']) . '</div>
+                        <div class="book-price">R$ ' . floatval($livro['preco']) . '</div>
+                        <div class="book-icons">
+                            <button class="icon-btn" title="Adicionar aos Favoritos">
+                                <i class="fas fa-heart"></i> <!-- Ícone de Favoritos -->
+                            </button>
+                            <button class="icon-btn" title="Adicionar ao Carrinho">
+                                <i class="fas fa-shopping-cart"></i> <!-- Ícone de Carrinho -->
+                            </button>
+                        </div>
+                        <button Id="buy-btn">Comprar</button> <!-- Botão de Comprar -->
+                        <button class="detal-btn">Detalhes</button> <!-- Botão de Comprar -->
+                    </div>';
+                }
+            } else {
+                echo '<p class="text-center">Nenhum livro disponível no momento.</p>';
+            }
+            ?>
+
 </div>
         <!-- livros adicionadas dinamicamente pelo php -->
