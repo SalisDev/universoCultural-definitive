@@ -118,8 +118,8 @@
                 </ul>
                 <p class="price">Preço: R$ 49,90</p>
                 <div class="buttons">
-                    <button class="cart-btn">🛒 Adicionar ao Carrinho</button>
-                    <button class="buy-btn">🛍️ Comprar</button>
+                    <button class="cart-btn">Adicionar ao Carrinho</button>
+                    <button class="buy-btn">Comprar</button>
                 </div>
             </div>
         </div>

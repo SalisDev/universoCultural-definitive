@@ -123,8 +123,8 @@
                 </ul>
                 <p class="price-total">Total: R$ 49,90</p>
                 <div class="buttons">
-                    <button class="cancel-btn">❌ Cancelar</button>
-                    <button class="confirm-btn">✅ Confirmar Compra</button>
+                    <button class="cancel-btn">Cancelar</button>
+                    <button class="confirm-btn">Confirmar Compra</button>
                 </div>
             </div>
         </div>
