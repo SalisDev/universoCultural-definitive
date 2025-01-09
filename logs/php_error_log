@@ -419,3 +419,28 @@ Stack trace:
 [08-Jan-2025 11:12:43 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 15
 [08-Jan-2025 11:12:43 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type int in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 16
 [08-Jan-2025 11:12:43 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 16
+[09-Jan-2025 08:20:19 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 16
+[09-Jan-2025 08:20:55 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 16
+[09-Jan-2025 08:22:41 America/Sao_Paulo] PHP Warning:  Undefined array key "img" in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 16
+[09-Jan-2025 08:22:41 America/Sao_Paulo] PHP Warning:  Array to string conversion in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 17
+[09-Jan-2025 08:23:51 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:30:29 America/Sao_Paulo] PHP Warning:  Undefined variable $idUsuario in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 7
+[09-Jan-2025 08:30:29 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:31:56 America/Sao_Paulo] PHP Warning:  Undefined array key "id" in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 2
+[09-Jan-2025 08:31:56 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:32:31 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:33:09 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:33:31 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:33:59 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:34:24 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected token "if" in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 13
+[09-Jan-2025 08:34:32 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.titulo' in 'field list'
+[09-Jan-2025 08:35:29 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.img' in 'field list'
+[09-Jan-2025 08:35:50 America/Sao_Paulo] Erro ao listar os livros do carrinho: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'l.quantidade' in 'field list'
+[09-Jan-2025 08:36:00 America/Sao_Paulo] PHP Warning:  Undefined array key "img" in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 17
+[09-Jan-2025 08:36:00 America/Sao_Paulo] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 17
+[09-Jan-2025 08:36:00 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 17
+[09-Jan-2025 08:36:00 America/Sao_Paulo] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 19
+[09-Jan-2025 08:36:00 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 19
+[09-Jan-2025 08:36:29 America/Sao_Paulo] PHP Warning:  Undefined array key "titulo" in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 16
+[09-Jan-2025 08:36:29 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\carrinho.php on line 16
+[09-Jan-2025 08:45:03 America/Sao_Paulo] PHP Warning:  Undefined variable $idUsuario in C:\xampp\htdocs\universo-cultural\pages\favoritos.php on line 7

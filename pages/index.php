@@ -38,7 +38,7 @@
                     <div class="book-container">
                         <img src="' . htmlspecialchars($livro['imagem']) . '" alt="' . htmlspecialchars($livro['subtitulo']) . '" class="book-image">
                         <div class="book-title">' . htmlspecialchars($livro['nome']) . '</div>
-                        <div class="book-price">R$ ' . htmlspecialchars($livro['preco']) . '</div>
+                        <div class="book-price">R$ ' . floatval($livro['preco']) . '</div>
                         <div class="book-icons">
                             <button class="icon-btn" title="Adicionar aos Favoritos">
                                 <i class="fas fa-heart"></i> <!-- Ícone de Favoritos -->

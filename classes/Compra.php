@@ -15,7 +15,7 @@ class Compra {
     public static function atualizarCompra($id, $entrega, $hora, $dataCompra, $quantidade, $livro, $usuario) {
         try {
             $pdo = MySql::conectar();
-            $sql = $pdo->prepare("UPDATE tbcompra SET entrega = ?, hora = ?, dataCompra = ?, quantidade = ?, livro = ?, usuario = ? WHERE cod = ?");
+            $sql = $pdo->prepare( "UPDATE tbcompra SET entrega = ?, hora = ?, dataCompra = ?, quantidade = ?, livro = ?, usuario = ? WHERE cod = ?");
             $sql->execute([$entrega, $hora, $dataCompra, $quantidade, $livro, $usuario, $id]);
             return true;
         } catch (PDOException $e) {

@@ -57,7 +57,7 @@
   font-family: Arial, sans-serif;
   background-color:   #ffffff; /* Azul claro para o fundo */
   margin-top: 10;
-  padding: 10;
+  padding: 30;
   /* display: flex; */
   justify-content: center;
   align-items: center;
@@ -131,6 +131,7 @@ h1 {
 }
 
 .form-cadastro {
+  padding: 25px;
   display: flex;
   flex-direction: column;
 }
@@ -230,11 +231,23 @@ body {
   margin-top: 10px;
 }
 
-.book-price {
+/* Estilos compartilhados */
+.book-container .book-price,
+.book-containerList .book-price {
   font-size: 16px;
   color: green;
   margin-top: 5px;
 }
+
+/* Estilos específicos */
+.book-container .book-price {
+  text-align: center;
+}
+
+.book-containerList .book-price {
+  text-align: left;
+}
+
 
 .book-details-btn {
   margin-top: 10px;
@@ -258,12 +271,7 @@ body {
   padding: 20px; /* Espaço interno ao redor da lista */
 }
 
-.book-icons {
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+
 
 .icon-btn {
   background-color: transparent;
@@ -305,4 +313,98 @@ body {
 
 .detal-btn:hover {
   background-color: #2b355f;
+}
+
+.book-containerList {
+  max-width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.book-imageList {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-detailsList {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center; /* Alinha as informações centralizadas verticalmente */
+}
+
+.book-title, .book-price, .book-info {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.book-title strong, .book-price strong {
+  font-weight: bold; /* Faz com que as palavras 'Capa' e 'Autor' fiquem em negrito */
+}
+
+.book-containerList .remove-cart-btn, .buy-btn, .remove-fav-btn, .cart-btn {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px; /* Espaço entre os botões */
+  width: 100%; /* Faz com que os botões ocupem a largura total disponível */
+}
+
+.remove-cart-btn, .remove-fav-btn {
+  background-color: #dc3545;
+}
+
+.remove-cart-btn, .remove-fav-btn :hover {
+  background-color: #a71d2a;
+  transform: scale(1.05); /* Pequena animação ao passar o mouse */
+}
+.cart-btn {
+  background-color: #a235dc;
+}
+
+.cart-btn:hover {
+  background-color: #971da7;
+  transform: scale(1.05); /* Pequena animação ao passar o mouse */
+}
+
+.buy-btn {
+  background-color: #28a745;
+}
+
+.buy-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Pequena animação ao passar o mouse */
+}
+
+/* Agrupa os botões e empilha verticalmente */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-icons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.log-out {
+  background-color: #215a97;
+  border-radius: 5px;
+  color: #ffffff;
+  border-color: #215a97;
 }

@@ -117,7 +117,9 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`cod`, `nome`, `email`, `senha`, `fone`, `obs`, `endereco`, `cpf`) VALUES
-(1, 'Samuel Conradt', 'conradtsamuel@gmail.com', '1234567', '48999270576', NULL, 1, '004.857.840-17');
+(1, 'alisson', 'alissongselau@gmail.com', '1234567', '48920027951', NULL, 1, '151.613.389-70');
+(2, 'lauanddra', 'machadolauandra@gmail.com', '1234567', '48998342710', NULL, 1, NULL );
+(3, 'tester', 'tester@gmail.com', '1234567', '48999270576', NULL, 1, NULL );
 
 --
 -- Índices para tabelas despejadas

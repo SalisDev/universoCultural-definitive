@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	//session_destroy();
+	// session_destroy();
 
 	date_default_timezone_set('America/Sao_Paulo');
 
