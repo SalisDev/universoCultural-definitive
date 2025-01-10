@@ -1,5 +1,25 @@
 <?php 
+
+// Verifique se o usuário está logado
+if (!isset($_SESSION['cod'])) {
+    echo '<script>alert("Você precisa estar logado para remover livros do carrinho!");</script>';
+    exit;
+}
+
 $idUsuario = $_SESSION['cod'];
+
+// Verifique se a requisição de remoção foi feita
+if (isset($_POST['idCarrinho'])) {
+    $idCarrinho = $_POST['idCarrinho'];
+    
+    // Chame o método de exclusão do livro do carrinho
+    if (Carrinho::removerLivroCarrinho($idCarrinho, $idUsuario)) {
+        header("Location: carrinho"); // Redireciona de volta para a página do carrinho
+        exit;
+    } else {
+        echo '<script>alert("Erro ao remover livro do carrinho!");</script>';
+    }
+}
 ?>
 
 <div class="container">
@@ -8,7 +28,9 @@ $idUsuario = $_SESSION['cod'];
     </div>
     <div class="book-list" id="cartList">
         <?php
+        // Recupera os livros no carrinho do usuário
         $carrinhos = Carrinho::listarCarrinho($idUsuario);
+        
         if ($carrinhos && count($carrinhos) > 0) {
             foreach ($carrinhos as $carrinho) {
                 echo '
@@ -22,7 +44,7 @@ $idUsuario = $_SESSION['cod'];
                         <div class="book-price"><strong>Preço:</strong> R$ ' . number_format($carrinho['preco'], 2, ',', '.') . '</div>
                     </div>
                     <div class="button-group">
-                        <form method="POST" action="removerLivro.php">
+                        <form method="POST" action=""> 
                             <input type="hidden" name="idCarrinho" value="' . htmlspecialchars($carrinho['carrinho_id']) . '">
                             <button type="submit" class="remove-cart-btn">Remover do Carrinho</button>
                         </form>

@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Livro</title>
-    <style>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -96,33 +90,56 @@
                 width: 100%;
             }
         }
-    </style>
+</style>
 
-</head>
-<body>
-    <div class="container">
-        <div class="book-details">
-            <div class="image-section">
-                <img src="public/imagens/Biblioteca-da-meia-noite.jpg" alt="Capa do livro 'Biblioteca da Meia-Noite'">
-            </div>
-            <div class="info-section">
-                <h1>Biblioteca da Meia-Noite</h1>
-                <ul class="book-metadata">
-                    <li>Editora: SLA</li>
-                    <li>Capa: Simples</li>
-                    <li>Quantidade de páginas: 123</li>
-                    <li>Restantes no estoque: 456</li>
-                    <li>Idioma: Português</li>
-                    <li>Gênero: Aventura</li>
-                    <li>Ano de lançamento: 2023</li>
-                </ul>
-                <p class="price">Preço: R$ 49,90</p>
-                <div class="buttons">
-                    <button class="cart-btn">Adicionar ao Carrinho</button>
-                    <button class="buy-btn">Comprar</button>
-                </div>
+
+<?php
+// Inclui a classe Livro
+require_once 'path/to/Livro.php';
+
+// Verifica se o ID do livro foi passado pela URL
+if (isset($_GET['cod'])) {
+    $idLivro = $_GET['cod'];
+
+    // Buscar as informações do livro com base no ID (exemplo com uma classe Livro)
+    $livroDetalhes = Livro::buscarDetalhes($idLivro); // Método para buscar os detalhes do livro
+
+    if ($livroDetalhes) {
+        // Exibir as informações do livro
+        echo '<div class="container">
+    <div class="book-details">
+        <div class="image-section">
+            <img src="' . htmlspecialchars($livroDetalhes['imagem']) . '" alt="Capa do livro ' . htmlspecialchars($livroDetalhes['nome']) . '">
+        </div>
+        <div class="info-section">
+            <h1>' . htmlspecialchars($livroDetalhes['nome']) . '</h1>
+            <ul class="book-metadata">
+                <li>Autor: ' . htmlspecialchars($livroDetalhes['autor']) . '</li>
+                <li>Editora: ' . htmlspecialchars($livroDetalhes['editora']) . '</li>
+                <li>Capa: ' . htmlspecialchars($livroDetalhes['capa']) . '</li>
+                <li>Quantidade de páginas: ' . htmlspecialchars($livroDetalhes['paginas']) . '</li>
+                <li>Restantes no estoque: ' . htmlspecialchars($livroDetalhes['estoque']) . '</li>
+                <li>Idioma: ' . htmlspecialchars($livroDetalhes['idioma']) . '</li>
+                <li>Gênero: ' . htmlspecialchars($livroDetalhes['genero']) . '</li>
+                <li>Ano de lançamento: ' . htmlspecialchars($livroDetalhes['anoLancamento']) . '</li>
+                <li>ISBN: ' . htmlspecialchars($livroDetalhes['ISBN']) . '</li>
+            </ul>
+            <p class="price">Preço: R$ ' . number_format(floatval($livroDetalhes['preco']), 2, ',', '.') . '</p>
+            <div class="buttons">
+                <button class="cart-btn">Adicionar ao Carrinho</button>
+                <button class="buy-btn">Comprar</button>
             </div>
         </div>
     </div>
-</body>
-</html>
+</div>
+';
+
+    } else {
+        echo '<p>Livro não encontrado.</p>';
+    }
+} else {
+    echo '<p>ID do livro não especificado.</p>';
+}
+echo 'O id procurado é ' . $_GET['cod'];
+        
+?>

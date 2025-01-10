@@ -311,12 +311,17 @@ body {
   transition: background-color 0.3s;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .detal-btn:hover {
   background-color: #2b355f;
 }
 
 .book-containerList {
-  max-width: 100%;
+  width: 100%;
   margin: 10px 0;
   border: 1px solid #ddd;
   padding: 15px;
@@ -384,6 +389,11 @@ body {
 .cart-btn {
   background-color: #a235dc;
 }
+
+.favorited {
+  color: red; /* Destaca os livros favoritos */
+}
+
 
 .cart-btn:hover {
   background-color: #971da7;

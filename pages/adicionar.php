@@ -1,6 +1,9 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Caminho do arquivo de log
+    $logFile = 'error_log.txt';
+
     // Dados do formulário
     $nome = $_POST['nome'];
     $autor = $_POST['autor'];
@@ -22,7 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $uploadFilePath = $uploadDir . $nomeArquivo;
 
     if (!file_exists($uploadDir)) {
-        mkdir($uploadDir, 0777, true);
+        if (!mkdir($uploadDir, 0777, true) && !is_dir($uploadDir)) {
+            error_log("Erro ao criar o diretório de upload: $uploadDir\n", 3, $logFile);
+            die("Erro ao criar o diretório de upload.");
+        }
     }
 
     // Verifica se o arquivo foi enviado corretamente
@@ -34,18 +40,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($resultado) {
                 echo "<script>alert('Livro cadastrado com sucesso!')</script>";
             } else {
-                echo "<script>alert('Erro ao cadastrar o livro.')</script>";
+                $errorMessage = "Erro ao cadastrar o livro no banco de dados";
+                error_log("$errorMessage\n", 3, $logFile);
+                echo "<script>alert('$errorMessage')</script>";
             }
-
         } else {
-            echo "<script>alert('Erro ao mover o arquivo para o diretório de upload.')</script>";
+            $errorMessage = "Erro ao mover o arquivo para o diretório de upload: $uploadFilePath.";
+            error_log("$errorMessage\n", 3, $logFile);
+            echo "<script>alert('$errorMessage')</script>";
         }
     } else {
-        echo "Erro no upload da imagem: " . $imagem['error'];
+        $errorMessage = "Erro no upload da imagem. Código de erro: " . $imagem['error'];
+        error_log("$errorMessage\n", 3, $logFile);
+        echo "<script>alert('$errorMessage')</script>";
     }
-    
 }
 ?>
+
 
 <!-- <main class="cadastromain"> -->
 <form action="#" method="POST" class="form-cadastro" enctype="multipart/form-data">

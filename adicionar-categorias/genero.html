@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>adicionar gênero</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Index.html" class="logo"><img class="logo" src="imagens/logo.png" alt="Universo Cultural"></a>
+        
+        <ul class="nav-links">
+            <li><a href="Index.html">Início</a></li>
+            <li><a href="adicionar.html">Cadastro</a></li>
+            <li><a href="Listagem.html">Listagem</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="Cadastro.html">sing-up</a>sing-up</li>
+            <li><a href="Login.html">log-in</a></li>
+        </ul>
+    </div>
+    <br>
+
+<div class="adicionar">
+    <div class="container2">
+        <div class="dropdown">
+            <button class="dropdown-btn">Selecionar Categoria</button>
+            <div class="dropdown-content">
+                <a href="adicionar.html">Livros</a>
+                <a href="autores.html">Autores</a>
+                <a href="genero.html">Gêneros</a>
+                <a href="idiomas.html">Idiomas</a>
+                <a href="editoras.html">Editoras</a>
+            </div>
+        </div>
+        </div>
+
+        <form class="form-cadastro" action="genero.php" method="POST">
+            <h1>Cadastro de Gêneros</h1>
+            
+            <label for="genero">Nome do gênero:</label>
+            <input type="text" id="genero" name="genero" required>
+            <button type="submit" class="btn-submit">Cadastrar</button>
+ </form>
+    </div>
+</div>
+</body>
+</html>
