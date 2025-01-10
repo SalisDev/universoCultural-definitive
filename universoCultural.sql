@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 03/01/2025 às 22:23
+-- Host: localhost:3307
+-- Tempo de geração: 10/01/2025 às 20:54
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,7 +42,8 @@ CREATE TABLE `endereco` (
 --
 
 INSERT INTO `endereco` (`cod`, `cidade`, `bairro`, `rua`, `estado`, `cep`, `numero`) VALUES
-(1, 'Sombrio', 'Raizera', 'Rua Mário Sant Helena ', '42', 88960000, 211);
+(1, 'Sombrio', 'Raizera', 'Rua Mário Sant Helena ', '42', 88960000, 211),
+(2, 'Cajueiro', 'centro', 'rua 6', '27', 88955000, 211);
 
 -- --------------------------------------------------------
 
@@ -57,6 +58,25 @@ CREATE TABLE `estoque` (
   `valorCompra` decimal(10,2) DEFAULT NULL,
   `lote` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `tbcarrinho`
+--
+
+CREATE TABLE `tbcarrinho` (
+  `cod` int(11) NOT NULL,
+  `cod_livro` int(11) NOT NULL,
+  `cod_usuario` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tbcarrinho`
+--
+
+INSERT INTO `tbcarrinho` (`cod`, `cod_livro`, `cod_usuario`) VALUES
+(27, 20, 1);
 
 -- --------------------------------------------------------
 
@@ -77,23 +97,45 @@ CREATE TABLE `tbcompra` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `tbfavorito`
+--
+
+CREATE TABLE `tbfavorito` (
+  `cod` int(11) NOT NULL,
+  `cod_livro` int(11) NOT NULL,
+  `cod_usuario` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `tblivro`
 --
 
 CREATE TABLE `tblivro` (
   `cod` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
   `capa` varchar(255) DEFAULT NULL,
   `imagem` varchar(255) NOT NULL,
   `autor` varchar(255) DEFAULT NULL,
   `editora` varchar(255) DEFAULT NULL,
   `ISBN` varchar(13) DEFAULT NULL,
   `paginas` int(11) DEFAULT NULL,
-  `resumo` varchar(150) DEFAULT NULL,
+  `subtitulo` varchar(200) NOT NULL,
   `estoque` varchar(255) DEFAULT NULL,
+  `preco` decimal(10,0) NOT NULL,
   `idioma` varchar(255) DEFAULT NULL,
   `genero` varchar(255) DEFAULT NULL,
   `anoLancamento` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `tblivro`
+--
+
+INSERT INTO `tblivro` (`cod`, `nome`, `capa`, `imagem`, `autor`, `editora`, `ISBN`, `paginas`, `subtitulo`, `estoque`, `preco`, `idioma`, `genero`, `anoLancamento`) VALUES
+(20, 'A hora da estrela', 'dura', 'uploads/capas/capa_678110addcb564.63420466.jpg', '1', '1', '1111111111111', 113, 'resumo', '31', 20, '1', '1', '0000-00-00'),
+(21, 'Alisson', 'dura', 'uploads/capas/capa_678110cea1b407.16375893.jpg', '1', '1', '1111111111111', 123, 'resumo', '12', 34, '1', '1', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -117,9 +159,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`cod`, `nome`, `email`, `senha`, `fone`, `obs`, `endereco`, `cpf`) VALUES
-(1, 'alisson', 'alissongselau@gmail.com', '1234567', '48920027951', NULL, 1, '151.613.389-70');
-(2, 'lauanddra', 'machadolauandra@gmail.com', '1234567', '48998342710', NULL, 1, NULL );
-(3, 'tester', 'tester@gmail.com', '1234567', '48999270576', NULL, 1, NULL );
+(1, 'alisson', 'alissongselau@gmail.com', '1234567', '48920027951', NULL, 1, '151.613.389-70'),
+(2, 'Alisson', 'conradtsamuel@gmail.com', '323321', '489962015993', NULL, 0, '151.613.389-70');
 
 --
 -- Índices para tabelas despejadas
@@ -138,12 +179,20 @@ ALTER TABLE `estoque`
   ADD PRIMARY KEY (`cod`);
 
 --
--- Índices de tabela `tbcompra`
+-- Índices de tabela `tbcarrinho`
 --
-ALTER TABLE `tbcompra`
+ALTER TABLE `tbcarrinho`
   ADD PRIMARY KEY (`cod`),
-  ADD KEY `livro` (`livro`),
-  ADD KEY `usuario` (`usuario`);
+  ADD KEY `cod_livro` (`cod_livro`),
+  ADD KEY `cod_usuario` (`cod_usuario`);
+
+--
+-- Índices de tabela `tbfavorito`
+--
+ALTER TABLE `tbfavorito`
+  ADD PRIMARY KEY (`cod`),
+  ADD KEY `cod_livro` (`cod_livro`),
+  ADD KEY `cod_usuario` (`cod_usuario`);
 
 --
 -- Índices de tabela `tblivro`
@@ -155,8 +204,7 @@ ALTER TABLE `tblivro`
 -- Índices de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`cod`),
-  ADD KEY `endereco` (`endereco`);
+  ADD PRIMARY KEY (`cod`);
 
 --
 -- AUTO_INCREMENT para tabelas despejadas
@@ -166,7 +214,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `endereco`
 --
 ALTER TABLE `endereco`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `estoque`
@@ -175,39 +223,46 @@ ALTER TABLE `estoque`
   MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `tbcompra`
+-- AUTO_INCREMENT de tabela `tbcarrinho`
 --
-ALTER TABLE `tbcompra`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tbcarrinho`
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+
+--
+-- AUTO_INCREMENT de tabela `tbfavorito`
+--
+ALTER TABLE `tbfavorito`
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de tabela `tblivro`
 --
 ALTER TABLE `tblivro`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Restrições para tabelas despejadas
 --
 
 --
--- Restrições para tabelas `tbcompra`
+-- Restrições para tabelas `tbcarrinho`
 --
-ALTER TABLE `tbcompra`
-  ADD CONSTRAINT `tbcompra_ibfk_1` FOREIGN KEY (`livro`) REFERENCES `tblivro` (`cod`),
-  ADD CONSTRAINT `tbcompra_ibfk_2` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`cod`);
+ALTER TABLE `tbcarrinho`
+  ADD CONSTRAINT `tbcarrinho_ibfk_1` FOREIGN KEY (`cod_livro`) REFERENCES `tblivro` (`cod`),
+  ADD CONSTRAINT `tbcarrinho_ibfk_2` FOREIGN KEY (`cod_usuario`) REFERENCES `usuario` (`cod`);
 
 --
--- Restrições para tabelas `usuario`
+-- Restrições para tabelas `tbfavorito`
 --
-ALTER TABLE `usuario`
-  ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`endereco`) REFERENCES `endereco` (`cod`);
+ALTER TABLE `tbfavorito`
+  ADD CONSTRAINT `tbfavorito_ibfk_1` FOREIGN KEY (`cod_livro`) REFERENCES `tblivro` (`cod`),
+  ADD CONSTRAINT `tbfavorito_ibfk_2` FOREIGN KEY (`cod_usuario`) REFERENCES `usuario` (`cod`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
