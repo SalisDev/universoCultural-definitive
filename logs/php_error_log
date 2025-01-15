@@ -206,3 +206,13 @@ Stack trace:
 [10-Jan-2025 16:35:44 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected identifier "text" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 100
 [10-Jan-2025 16:35:45 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected identifier "text" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 100
 [10-Jan-2025 16:35:46 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected identifier "text" in C:\xampp\htdocs\universo-cultural\pages\index.php on line 100
+[15-Jan-2025 08:32:18 America/Sao_Paulo] PHP Warning:  Undefined variable $idLivro in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 124
+[15-Jan-2025 08:32:18 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[15-Jan-2025 08:32:19 America/Sao_Paulo] PHP Warning:  Undefined variable $idLivro in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 124
+[15-Jan-2025 08:32:19 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[15-Jan-2025 08:32:19 America/Sao_Paulo] PHP Warning:  Undefined variable $idLivro in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 124
+[15-Jan-2025 08:32:19 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[15-Jan-2025 08:32:19 America/Sao_Paulo] PHP Warning:  Undefined variable $idLivro in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 124
+[15-Jan-2025 08:32:19 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[15-Jan-2025 08:32:29 America/Sao_Paulo] PHP Warning:  Undefined variable $idLivro in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 124
+[15-Jan-2025 08:32:29 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens

@@ -95,7 +95,7 @@
 
 <?php
 // Inclui a classe Livro
-require_once 'path/to/Livro.php';
+require_once '../path/to/Livro.php'; // Adjust the path to the correct location of Livro.php
 
 // Verifica se o ID do livro foi passado pela URL
 if (isset($_GET['cod'])) {
@@ -135,11 +135,9 @@ if (isset($_GET['cod'])) {
 ';
 
     } else {
-        echo '<p>Livro não encontrado.</p>';
+    echo 'O id procurado é ' . htmlspecialchars($_GET['cod']);
     }
 } else {
     echo '<p>ID do livro não especificado.</p>';
-}
-echo 'O id procurado é ' . $_GET['cod'];
-        
-?>
+}       
+?>  
