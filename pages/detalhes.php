@@ -94,15 +94,27 @@
 
 
 <?php
-// Inclui a classe Livro
-require_once '../path/to/Livro.php'; // Adjust the path to the correct location of Livro.php
 
 // Verifica se o ID do livro foi passado pela URL
 if (isset($_GET['cod'])) {
     $idLivro = $_GET['cod'];
 
     // Buscar as informações do livro com base no ID (exemplo com uma classe Livro)
-    $livroDetalhes = Livro::buscarDetalhes($idLivro); // Método para buscar os detalhes do livro
+    $livroDetalhes = Livro::buscarLivroPorId($idLivro); // Método para buscar os detalhes do livro
+
+    // Adicionar ao carrinho se o formulário foi enviado
+if (isset($_POST['idLivro']) && isset($_SESSION['cod'])) {
+    $idLivro = $_POST['idLivro'];
+    $idUsuario = $_SESSION['cod'];
+
+    // Exemplo de uso no formulário de adicionar ao carrinho
+    if (Carrinho::adicionarCarrinho($idLivro, $idUsuario) === false) {
+        echo '<script>alert("Este livro já está no seu carrinho!");</script>';
+    } else {
+        echo '<script>alert("Livro adicionado ao carrinho!");</script>';
+    }
+}
+
 
     if ($livroDetalhes) {
         // Exibir as informações do livro
@@ -126,8 +138,11 @@ if (isset($_GET['cod'])) {
             </ul>
             <p class="price">Preço: R$ ' . number_format(floatval($livroDetalhes['preco']), 2, ',', '.') . '</p>
             <div class="buttons">
-                <button class="cart-btn">Adicionar ao Carrinho</button>
-                <button class="buy-btn">Comprar</button>
+                <form method="POST">
+                            <input type="hidden" name="idLivro" value="' . htmlspecialchars($idLivro) . '">
+                            <button type="submit" class="cart-btn">Adicionar ao Carrinho</button>
+                        </form>
+                <a class="detal-link" href="compra?cod=' . htmlspecialchars($idLivro) . '"><button Id="buy-btn">Comprar</button></a> <!-- Botão de Comprar -->
             </div>
         </div>
     </div>

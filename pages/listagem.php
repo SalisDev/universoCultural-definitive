@@ -18,14 +18,7 @@
                     <div class="book-title">' . htmlspecialchars($livro['nome']) . '</div>
                     <div class="book-price">R$ ' . floatval($livro['preco']) . '</div>
                     <div class="book-icons">
-                        <button class="icon-btn add-to-favorites ' . ($livro['is_favorite'] ? 'favorited' : '') . '" 
-                                data-id="' . htmlspecialchars($livro['cod']) . '" 
-                                title="' . ($livro['is_favorite'] ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos') . '">
-                            <i class="fas fa-heart"></i>
-                        </button>
-                        <button class="icon-btn add-to-cart" data-id="' . htmlspecialchars($livro['cod']) . '" title="Adicionar ao Carrinho">
-                            <i class="fas fa-shopping-cart"></i>
-                        </button>
+                        
                     </div>
                     <button Id="buy-btn">Comprar</button> <!-- Botão de Comprar -->
                     <button class="detal-btn">Detalhes</button> <!-- Botão de Comprar -->

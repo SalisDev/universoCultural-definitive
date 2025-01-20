@@ -216,3 +216,47 @@ Stack trace:
 [15-Jan-2025 08:32:19 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
 [15-Jan-2025 08:32:29 America/Sao_Paulo] PHP Warning:  Undefined variable $idLivro in C:\xampp\htdocs\universo-cultural\classes\Livro.php on line 124
 [15-Jan-2025 08:32:29 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[17-Jan-2025 09:38:21 America/Sao_Paulo] PHP Warning:  require_once(../path/to/Livro.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 98
+[17-Jan-2025 09:38:21 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '../path/to/Livro.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\universo-cultural\pages\detalhes.php:98
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\index.php(15): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 98
+[17-Jan-2025 09:41:55 America/Sao_Paulo] PHP Warning:  require_once(../path/to/Livro.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 98
+[17-Jan-2025 09:41:55 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Failed opening required '../path/to/Livro.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\universo-cultural\pages\detalhes.php:98
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\index.php(15): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 98
+[17-Jan-2025 09:42:16 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[17-Jan-2025 09:42:52 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[17-Jan-2025 09:42:56 America/Sao_Paulo] Erro ao buscar detalhes do livro: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[17-Jan-2025 16:28:57 America/Sao_Paulo] PHP Warning:  Undefined variable $livro in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 128
+[17-Jan-2025 16:28:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 128
+[17-Jan-2025 16:28:57 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 128
+[17-Jan-2025 16:30:35 America/Sao_Paulo] PHP Warning:  Undefined variable $livro in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 128
+[17-Jan-2025 16:30:35 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 128
+[17-Jan-2025 16:30:35 America/Sao_Paulo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 128
+[17-Jan-2025 16:47:43 America/Sao_Paulo] PHP Warning:  Undefined variable $favorito in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 129
+[17-Jan-2025 16:47:43 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 129
+[17-Jan-2025 16:47:43 America/Sao_Paulo] PHP Warning:  Undefined variable $favorito in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 129
+[17-Jan-2025 16:47:43 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 129
+[17-Jan-2025 16:47:45 America/Sao_Paulo] PHP Warning:  Undefined variable $favorito in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 129
+[17-Jan-2025 16:47:45 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 129
+[17-Jan-2025 16:50:40 America/Sao_Paulo] Erro ao cadastrar carrinho: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`universo_cultural`.`tbcarrinho`, CONSTRAINT `tbcarrinho_ibfk_1` FOREIGN KEY (`cod_livro`) REFERENCES `tblivro` (`cod`))
+[17-Jan-2025 16:50:40 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\universo-cultural\pages\detalhes.php:1) in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 110
+[17-Jan-2025 16:51:25 America/Sao_Paulo] PHP Warning:  Undefined variable $favorito in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 145
+[17-Jan-2025 16:51:25 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 145
+[17-Jan-2025 16:51:28 America/Sao_Paulo] PHP Warning:  Undefined variable $favorito in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 145
+[17-Jan-2025 16:51:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 145
+[17-Jan-2025 16:54:17 America/Sao_Paulo] PHP Warning:  Undefined variable $favorito in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 145
+[17-Jan-2025 16:54:17 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 145
+[20-Jan-2025 19:38:38 America/Sao_Paulo] PHP Warning:  Undefined variable $favorito in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 146
+[20-Jan-2025 19:38:38 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 146
+[20-Jan-2025 19:40:05 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\universo-cultural\pages\detalhes.php:146
+Stack trace:
+#0 C:\xampp\htdocs\universo-cultural\index.php(15): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 146
+[20-Jan-2025 19:44:17 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\universo-cultural\pages\detalhes.php:1) in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 117
+[20-Jan-2025 19:44:33 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\universo-cultural\pages\detalhes.php:1) in C:\xampp\htdocs\universo-cultural\pages\detalhes.php on line 117

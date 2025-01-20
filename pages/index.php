@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Chama o método de adicionar ou remover favorito dependendo do estado atual
         $status = Favorito::adicionarFavorito($idLivro, $idUsuario);
         if ($status) {
-            header("Location: " . $_SERVER['PHP_SELF']); // Redirecionar para a mesma página
+            header("Location: " . INCLUDE_PATH); // Redirecionar para a mesma página
         } else {
             echo '<script>alert("Erro ao adicionar/remover favorito!");</script>';
         }
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo '<script>alert("Livro adicionado ao carrinho!");</script>';
             }
         }
-        header("Location: " . $_SERVER['PHP_SELF']); // Redirecionar para a mesma página
+        header("Location: " . INCLUDE_PATH.'/carrinho'); // Redirecionar para a mesma página
         exit;
     }
 }
@@ -88,8 +88,8 @@ $livros = Livro::listarLivros($idUsuario);
                     </button>
                 </form>
             </div>
-            <button Id="buy-btn">Comprar</button> <!-- Botão de Comprar -->
-            <a class="detal-link" href="detalhes.php?cod=' . htmlspecialchars($livro['cod']) . '"><button class="detal-btn">detalhes</button></a> 
+            <a class="detal-link" href="compra?cod=' . htmlspecialchars($livro['cod']) . '"><button Id="buy-btn">Comprar</button></a> <!-- Botão de Comprar -->
+            <a class="detal-link" href="detalhes?cod=' . htmlspecialchars($livro['cod']) . '"><button class="detal-btn">detalhes</button></a> 
              <!-- Botão de Detalhes -->
     </div>';
             }
