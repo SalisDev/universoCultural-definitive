@@ -96,11 +96,27 @@
 }
 </style>
 
+
+
 <?php
+
 
 if (isset($_GET['cod'])) {
     $idLivro = $_GET['cod'];
     $livroDetalhes = Livro::buscarLivroPorId($idLivro);
+
+    $idUsuario = $_SESSION['cod'];
+    if (isset($_POST['finalizarCompra'])) {
+        $hora = date("H:i:s"); // Hora da compra
+        $dataCompra = date("Y-m-d");
+        if (Compra::cadastrarCompra("pendente", $hora,$dataCompra, 1, $idLivro, $idUsuario)) { // Alterado para Compra::finalizarCompra
+            echo '<script>alert("Compra finalizada com sucesso!");</script>';
+            header("Location: historico_compras"); // Redireciona para o histórico de compras
+            exit;
+        } else {
+            echo '<script>alert("Erro ao finalizar compra!");</script>';
+        }
+    }
 
     if ($livroDetalhes) {
         echo '
@@ -124,7 +140,9 @@ if (isset($_GET['cod'])) {
                     <p class="price-total">Total: R$ ' . number_format(floatval($livroDetalhes['preco']), 2, ',', '.') . '</p>
                     <div class="buttons">
                         <button class="cancel-btn" onclick="history.back()">Cancelar</button>
-                        <button class="confirm-btn">Confirmar Compra</button>
+                        <form method="POST" action="">
+                            <button type="submit" name="finalizarCompra" class="confirm-btn">Confirmar Compra</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -135,5 +153,6 @@ if (isset($_GET['cod'])) {
 } else {
     echo '<p>ID do livro não especificado.</p>';
 }
+
 
 ?>

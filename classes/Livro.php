@@ -19,6 +19,25 @@ class Livro
         }
     }
 
+    public static function pegarNome($idLivro) {
+        try {
+            $pdo = MySql::conectar();
+            $sql = $pdo->prepare("SELECT nome FROM tbLivro WHERE cod = ?");
+            $sql->execute([$idLivro]);
+    
+            $livro = $sql->fetch(PDO::FETCH_ASSOC);
+            if ($livro) {
+                return $livro['nome']; // Retorna apenas o nome do livro
+            } else {
+                return false;
+            }
+        } catch (PDOException $e) {
+            error_log("Erro ao pegar nome do livro: " . $e->getMessage());
+            return $e->getMessage();
+        }
+    }
+    
+
     public static function atualizarLivro($id, $capa, $autor, $editora, $ISBN, $paginas, $subtitulo, $estoque, $idioma, $genero, $anoLancamento)
     {
         try {

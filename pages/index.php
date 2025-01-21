@@ -89,7 +89,7 @@ $livros = Livro::listarLivros($idUsuario);
                 </form>
             </div>
             <a class="detal-link" href="compra?cod=' . htmlspecialchars($livro['cod']) . '"><button Id="buy-btn">Comprar</button></a> <!-- Botão de Comprar -->
-            <a class="detal-link" href="detalhes?cod=' . htmlspecialchars($livro['cod']) . '"><button class="detal-btn">detalhes</button></a> 
+            <a class="detal-link" href="detalhes?cod=' . htmlspecialchars($livro['cod']) . '"><button class="detal-btn">Detalhes</button></a> 
              <!-- Botão de Detalhes -->
     </div>';
             }
