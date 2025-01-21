@@ -16,8 +16,8 @@
 
 	spl_autoload_register($autoload);
 
-	define('INCLUDE_PATH', 'http://localhost/universo-cultural/');
-	define('HOST', 'localhost:3307');
+	define('INCLUDE_PATH', 'http://localhost/universoCultural-definitive/');
+	define('HOST', 'localhost:3306');
 	define('USER', 'root');
 	define('PASSWORD', '');
 	define('DATABASE', 'universo_cultural');

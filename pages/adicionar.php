@@ -69,8 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="tipo_capa">Capa:</label>
     <select id="tipo_capa" name="tipo_capa" required>
         <option value="">Selecione o tipo de capa</option>
-        <option value="dura">Dura</option>
-        <option value="simples">Simples</option>
+        <option value="Dura">Dura</option>
+        <option value="Simples">Simples</option>
     </select>
 
     <label for="imagem">Imagem:</label>
@@ -79,13 +79,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="autor">Autor:</label>
     <select id="autor" name="autor" required>
         <option value="">Selecione um autor</option>
-        <option value="1">Clarisse Lispector</option>
+        <option value="Clarice">Clarisse Lispector</option>
     </select>
 
     <label for="editora">Editora:</label>
     <select id="editora" name="editora" required>
         <option value="">Selecione uma editora</option>
-        <option value="1">Arqueiro</option>
+        <option value="Arqueiro">Arqueiro</option>
     </select>
 
     <label for="ISBN">ISBN:</label>
@@ -116,13 +116,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="idioma">Idioma:</label>
     <select id="idioma" name="idioma" required>
         <option value="">Selecione um idioma</option>
-        <option value="1">Português</option>
+        <option value="Português">Português</option>
     </select>
 
     <label for="genero">Gênero:</label>
     <select id="genero" name="genero" required>
         <option value="">Selecione um gênero</option>
-        <option value="1">Aventura</option>
+        <option value="Aventura">Aventura</option>
     </select>
 
     <label for="year">Ano de lançamento:</label>
