@@ -1,2 +1,2 @@
 # universsoCultural
-aqui é onde vai ter a versão final do sistema, após seus últimos ajustes
+aqui temos a versão final do sistema Universo Cultural, ele pode ser retomado algum dia mas por enquanto é isso.
